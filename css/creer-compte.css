@@ -6,8 +6,12 @@ form {
 
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
-  main section video {
-    display: none;
+  main article {
+    flex-direction: column;
+  }
+
+  main article section video {
+    margin: 3% 0;
   }
 }
 
@@ -18,5 +22,9 @@ form {
 
   form {
     font-size: 0.8em;
+  }
+
+  main article section video {
+    width: 250px;
   }
 }
