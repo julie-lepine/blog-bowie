@@ -1,0 +1,41 @@
+/* HEADER */
+.navbarhidden {
+    background-color: rgba(207, 204, 204, 0.253);
+}
+
+.navbarhidden u li:before {
+    content: "/";
+}
+
+/* CORPS */
+/* ARTICLES */
+main article .borderz {
+    margin-top: 5%;
+    border: 2px dotted black;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+h2.text-end::before {
+    content: "\2192";
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+    main article section span {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+    .navbarhidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer div {
+        flex-direction: column;
+    }
+}

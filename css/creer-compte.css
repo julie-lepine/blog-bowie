@@ -1,0 +1,22 @@
+/* FORM */
+form {
+  border: 1px dotted #FFC107;
+  padding: 2%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+  main section video {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer div {
+      flex-direction: column;
+  }
+
+  form {
+    font-size: 0.8em;
+  }
+}
