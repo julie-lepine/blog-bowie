@@ -4,6 +4,16 @@ form {
   padding: 2%;
 }
 
+/* MSGS D'ERREURS FORM */
+#errorID, #errorPassword, #errorEmail, #errorEmails {
+  color : red;
+  font-size: 0.8em;
+}
+
+#inputNationality, #validNews {
+  font-size: 0.8em;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
   main article {
