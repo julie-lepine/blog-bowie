@@ -17,44 +17,19 @@
 </head>
 
 <body>
-  <header id="start">
-    <nav class="nav navbar navbar-light bg-warning navbar-expand-lg p-1 mb-3">
-      <a href="../index.html" class="navbar-brand m-2"> <img class="rounded-circle img-fluid"
-          src="../img/WP_20151118_19_22_54_Pro.jpg" alt="photo-Bowie" width="100" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="width70 navbar-nav d-flex justify-content-around">
-          <li class="nav-item p-2">
-            <a href="../index.html" class="nav-link p-2">Accueil</a>
-          </li>
-          <li class="nav-item p-2">
-            <a href="blog.html" class="nav-link p-2">Blog</a>
-          </li>
-          <li class="nav-item p-2">
-            <a href="contact.html" class="nav-link p-2 active">Contact</a>
-          </li>
-          <li class="nav-item p-2">
-            <a href="creer-compte.html" class="nav-link p-2">Créer un compte</a>
-          </li>
-        </ul>
+  <header>
+    <div class="dropdown">
+      <div class="ww">
+        <button onclick="myFunction()" class="dropbtn btn btn-warning">
+          Menu
+        </button>
+        <div class="youReHere">Contacts</div>
       </div>
-    </nav>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb ms-5 m-2">
-        <li class="breadcrumb-item">
-          <a href="../index.html" class="text-decoration-none">Accueil</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Contacts</li>
-      </ol>
-    </nav>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html">Accueil</a>
+        <a href="./blog.html">Blog</a>
+      </div>
+    </div>
   </header>
 
   <main class="container-fluid mt-5 mb-5">
@@ -100,7 +75,7 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="../script.js"></script>
 
 </body>
 

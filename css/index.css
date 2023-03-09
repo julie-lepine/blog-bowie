@@ -1,7 +1,3 @@
-.text-uppercase {
-    margin: 5%;
-}
-
 article section .card:hover {
     background-color: rgba(239, 241, 114, 0.336);
 }

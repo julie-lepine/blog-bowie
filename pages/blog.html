@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/blog.css" />
   <link rel="stylesheet" href="../css/headerandfooter.css">
   <script src="https://kit.fontawesome.com/caaedbdc07.js" crossorigin="anonymous"></script>
@@ -16,52 +16,32 @@
   <meta type="description" content="Bienvenue, chers humains, dans ce modeste blog personnel.">
 </head>
 
-<body">
+<body>
   <header id="start">
-    <nav class="nav navbar navbar-light bg-warning navbar-expand-lg p-1 mb-3">
-      <a href="../index.html" class="navbar-brand m-2"> <img class="rounded-circle img-fluid"
-          src="../img/WP_20151118_19_22_54_Pro.jpg" alt="photo-Bowie" width="100" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="width70 navbar-nav d-flex justify-content-around">
-          <li class="nav-item p-2">
-            <a href="../index.html" class="nav-link p-2">Accueil</a>
-          </li>
-          <li class="nav-item p-2">
-            <a href="blog.html" class="nav-link active p-2">Blog</a>
-          </li>
-          <li class="nav-item p-2">
-            <a href="contact.html" class="nav-link p-2">Contact</a>
-          </li>
-          <li class="nav-item p-2">
-            <a href="creer-compte.html" class="nav-link p-2">Créer un compte</a>
-          </li>
-        </ul>
+    <div class="dropdown">
+      <div class="ww">
+        <button onclick="myFunction()" class="dropbtn btn btn-warning">
+          Menu
+        </button>
+        <div class="youReHere me-5">Blog</div>
       </div>
-    </nav>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb ms-5 m-2">
-        <li class="breadcrumb-item">
-          <a href="../index.html" class="text-decoration-none">Accueil</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Blog</li>
-      </ol>
-    </nav>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html">Accueil</a>
+        <a href="./contact.html">Contacts</a>
+      </div>
+    </div>
     <nav class="navbarhidden nav navbar navbar-expand-lg mb-3 w-100">
       <ul class="navbar-nav w-100">
-        <li class="nav-item ms-3 pe-3"><a href="#chap1" class="nav-link link-secondary"><i class="bi bi-bookmark-heart-fill"></i> Le sapin de Noël</a></li>
-        <li class="nav-item pe-3"><a href="#chap2" class="nav-link link-secondary"><i class="bi bi-bookmark-heart-fill"></i> J'ai faim</a></li>
-        <li class="nav-item pe-3"><a href="#chap3" class="nav-link link-secondary"><i class="bi bi-bookmark-heart-fill"></i> Mes potes de dehors</a></li>
-        <li class="nav-item pe-3"><a href="#chap4" class="nav-link link-secondary"><i class="bi bi-bookmark-heart-fill"></i> La maîtresse</a></li>
-        <li class="nav-item pe-3"><a href="#chap5" class="nav-link link-secondary"><i class="bi bi-bookmark-heart-fill"></i> Le sommeil</a></li>
+        <li class="nav-item ms-3 pe-3"><a href="#chap1" class="nav-link link-secondary"><i
+              class="bi bi-bookmark-heart-fill"></i> Le sapin de Noël</a></li>
+        <li class="nav-item pe-3"><a href="#chap2" class="nav-link link-secondary"><i
+              class="bi bi-bookmark-heart-fill"></i> J'ai faim</a></li>
+        <li class="nav-item pe-3"><a href="#chap3" class="nav-link link-secondary"><i
+              class="bi bi-bookmark-heart-fill"></i> Mes potes de dehors</a></li>
+        <li class="nav-item pe-3"><a href="#chap4" class="nav-link link-secondary"><i
+              class="bi bi-bookmark-heart-fill"></i> La maîtresse</a></li>
+        <li class="nav-item pe-3"><a href="#chap5" class="nav-link link-secondary"><i
+              class="bi bi-bookmark-heart-fill"></i> Le sommeil</a></li>
       </ul>
     </nav>
   </header>
@@ -243,7 +223,7 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  <script src="../script.js"></script>
+  </body>
 
 </html>

@@ -25,3 +25,62 @@ footer {
     bottom: 5%;
     right: 4%;
 }
+
+/* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 1.5em;
+    cursor: pointer;
+    min-width: 160px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #f7cc4d;
+    border: 1px solid #f7bb07;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    background-color: #ffc107;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3e6c0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(238, 206, 206, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f7cc4d;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 
+
+  .ww {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .youReHere {
+    display: flex;
+    align-items: center;
+    min-width: 160px;
+    font-size: 2em;
+  }
