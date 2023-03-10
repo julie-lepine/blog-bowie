@@ -16,3 +16,30 @@ window.onclick = function(event) {
       }
     }
   } 
+
+/* dark and light mode */
+const btnDark = document.getElementById('lightOn')
+const btnLight = document.getElementById('lightOff')
+const main = document.querySelector('main')
+const header = document.querySelector('header')
+const aside = document.querySelector('.content')
+
+// DARK THEME
+function changeBackground(color) {
+  main.classList.add("dark")
+  header.classList.add("dark1")
+  aside.classList.add("dark1")
+  container.classList.add("dark")
+}
+
+btnDark.addEventListener("click", changeBackground)
+
+// LIGHT THEME 
+function changeBackground2(color) {
+  main.classList.remove("dark")
+  header.classList.remove("dark1")
+  aside.classList.remove("dark1")
+  container.classList.remove("dark")
+}
+
+btnLight.addEventListener("click", changeBackground2)

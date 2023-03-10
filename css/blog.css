@@ -7,12 +7,9 @@
     content: "/";
 }
 
-.youReHere {
+.navbar-nav {
     display: flex;
-    align-items: center;
-    min-width: 160px;
-    font-size: 2em;
-  }
+}
 
 /* CORPS */
 /* ARTICLES */

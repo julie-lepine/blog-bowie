@@ -27,3 +27,6 @@ document.querySelectorAll('.reveal').forEach(function(r) {
     observer.observe(r)
 })
 
+/* baisser volume video dans aside */
+var vid = document.getElementById("asideVideo");
+vid.volume = 0.2; 
