@@ -6,7 +6,7 @@
 }
 
 .img-fluid {
-    width: 15svw;
+    max-width: 15svw;
     margin: 20px;
     transform: rotate(-30deg);
     transition: all 0.5s;
