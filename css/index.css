@@ -1,15 +1,27 @@
-.text-center {height: 100svh;}
+.text-center {height: 50svh;}
 
 .card-body  {
-    height: 70svh;
+    height: 50svh;
     margin: 5svh 0;
 }
 
 .img-fluid {
     max-width: 15svw;
     margin: 20px;
-    transform: rotate(-30deg);
     transition: all 0.5s;
+}
+
+.img-fluid:hover {
+    /*transform: rotate(-30deg);*/
+    animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
 }
 
 .reveal {
