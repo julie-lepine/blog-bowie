@@ -16,13 +16,21 @@
   <meta type="description" content="Bienvenue, chers humains, dans ce modeste blog personnel.">
 </head>
 
+<!-- TO DO
+- ACCUEIL : FAIRE APPARAITRE DES PHOTOS AU SCROLL OU DECOUPER UNE VIDEO POUR AVOIR QUELQUES PHOTOS PR FAIRE UN MINI GIF ET TESTER CMT APPLE FAIT POUR OUVRIR SON PC AU SCROLL
+- DESIGN GENERAL : AJOUTER DES ANIMATIONS SUBTILES POUR TRAIN
+- DESIGN SPÉCIFIQUE : accueil : photos photos, c'est un bg / blog: mettre les objectifs et tout de l'accueil, mettre un aside de fausses pubs pour combler le vide / contacts : revoir c'est moche 
+- POURQUOI PAS UN THEME SOMBRE POUR S'ENTRAINER
+(mais alors, comment faire pour que le choix n'ait pas a être refait à chaque page ? mmmh)
+-->
+
 <body>
   <header>
     <div class="dropdown">
       <div class="ww">
-        <button onclick="myFunction()" class="dropbtn btn btn-warning">
-          Menu
-        </button>
+        <div onclick="myFunction()" class="dropbtn btn btn-warning">
+          O 
+        </div>
       </div>
       <div id="myDropdown" class="dropdown-content">
         <a href="./pages/blog.html">Blog</a>
@@ -31,72 +39,32 @@
     </div>
   </header>
 
-  <main class="container-fluid">
-    <article class="row">
-      <section class="col-xl-12 text-center">
-        <img class="rounded-circle img-fluid mb-2 mt-2 me-2" src="./img/WP_20151118_19_22_54_Pro.jpg" alt="photo-Bowie" width="100" />
-        <h1 class="text-uppercase">Bienvenue</h1>
-      </section>
-    </article>
-    <article class="row mb-3 p-0">
-      <section class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h2>Qui suis-je ?</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-              maxime et similique officia libero fuga odio, dolorem numquam
-              illum quibusdam, iure odit tempora explicabo repellat debitis
-              veniam ea, facilis voluptatum?
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h2>Une courte biographie</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-              maxime et similique officia libero fuga odio, dolorem numquam
-              illum quibusdam, iure odit tempora explicabo repellat debitis
-              veniam ea, facilis voluptatum?
-            </p>
-          </div>
-        </div>
-      </section>
-    </article>
-    <article class="text-center">
-      <img class="bowiedodo rounded mb-3" src="./img/IMG_2179.bmp" alt="photo-bowie" width="300" />
-    </article>
-    <article class="row mb-3 mt-3">
-      <section class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h2>Mes objectifs</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-              maxime et similique officia libero fuga odio, dolorem numquam
-              illum quibusdam, iure odit tempora explicabo repellat debitis
-              veniam ea, facilis voluptatum?
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h2>Mes rêves</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-              maxime et similique officia libero fuga odio, dolorem numquam
-              illum quibusdam, iure odit tempora explicabo repellat debitis
-              veniam ea, facilis voluptatum?
-            </p>
-          </div>
-        </div>
-      </section>
-    </article>
+  <main class="container-fluid reveal">
+    <div class="col-xl-12 text-center">
+      <img class="rounded-circle img-fluid" src="./img/WP_20151118_19_22_54_Pro.jpg" alt="photo-Bowie" />
+      <h1 class="reveal headTitle">Bienvenue</h1>
+    </div>
+    <div class="card-body reveal">
+      <h2 class="reveal">Qui suis-je ?</h2>
+      <p class="reveal">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+        maxime et similique officia libero fuga odio, dolorem numquam
+        illum quibusdam, iure odit tempora explicabo repellat debitis
+        veniam ea, facilis voluptatum?
+      </p>
+    </div>
+    <div class="card-body text-center reveal">
+      <img class="rounded mb-3 " id="bowiedodo" src="./img/IMG_2179.bmp" alt="photo-bowie" width="300" />
+    </div>
+    <div class="card-body reveal">
+      <h2 class="reveal">Une courte biographie</h2>
+      <p class="reveal">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+        maxime et similique officia libero fuga odio, dolorem numquam
+        illum quibusdam, iure odit tempora explicabo repellat debitis
+        veniam ea, facilis voluptatum?
+      </p>
+    </div>
   </main>
 
   <footer class="footer bg-warning text-light footer-expand-lg p-2 d-flex justify-content-center">
@@ -113,6 +81,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./script.js"></script>
+  <script src="./js/index.js"></script>
 
 </body>
 

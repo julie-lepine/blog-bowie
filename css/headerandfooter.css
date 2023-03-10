@@ -1,26 +1,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-  
-/* HEADER */
-header nav .nav-link:hover {
-    background-color: rgba(231, 233, 133, 0.26);    
-}
-
-.width70 {
-    width: 70%;
-}
 
 /* FOOTER */
 footer {
-    height: 20vh;
+    height: 12vh;
     font-size: 1.4em;
     font-variant: small-caps;
 }
 
 /* BOUTON RETOUR EN HAUT DE PAGE */
 .up {
-    width: 6%;
+    width: 5%;
     position: fixed;
     bottom: 5%;
     right: 4%;
@@ -75,7 +66,6 @@ footer {
   .ww {
     display: flex;
     justify-content: space-between;
-
   }
 
   .youReHere {
