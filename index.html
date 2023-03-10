@@ -20,21 +20,22 @@
 - DESIGN GENERAL : AJOUTER DES ANIMATIONS SUBTILES POUR TRAIN
 - POURQUOI PAS UN THEME SOMBRE POUR S'ENTRAINER
 (mais alors, comment faire pour que le choix n'ait pas a être refait à chaque page ? mmmh)
+- blog : ajouter article dans une liste, come une nav bar finalement
 -->
 
 <body>
   <header id="start">
     <div class="dropdown">
-      <div class="ww">
+      <div class="d-flex justify-content-between">
         <img src="./img/menu-2-svgrepo-com.svg" onclick="myFunction()" class="dropbtn" alt="dropdown-menu">
+        <div class="d-flex justify-content-evenly align-items-center lightbulbsDiv">
+          <img class="lightbulbs navItems" id="lightOn" src="./img/idea-off.png" alt="turn-off-dark-mode">
+          <div class="lightbulbsSeparator navItems"></div>
+          <img class="lightbulbs navItems" id="lightOff" src="./img/idea.png" alt="turn-on-dark-mode">
+        </div>
       </div>
       <div id="myDropdown" class="dropdown-content">
-        <a href="./pages/blog.html">blog</a>
-        <span class="d-flex justify-content-evenly">
-          <img class="lightbulbs" id="lightOff" src="./img/idea.png" alt="turn-on-dark-mode">
-          <div class="lightbulbsSeparator"></div>
-          <img class="lightbulbs" id="lightOn" src="./img/idea-off.png" alt="turn-off-dark-mode">
-        </span>
+        <a href="./pages/blog.html" class="navItems">blog</a>
       </div>
     </div>
   </header>

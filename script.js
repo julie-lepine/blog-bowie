@@ -29,7 +29,6 @@ function changeBackground(color) {
   main.classList.add("dark")
   header.classList.add("dark1")
   aside.classList.add("dark1")
-  container.classList.add("dark")
 }
 
 btnDark.addEventListener("click", changeBackground)
@@ -39,7 +38,6 @@ function changeBackground2(color) {
   main.classList.remove("dark")
   header.classList.remove("dark1")
   aside.classList.remove("dark1")
-  container.classList.remove("dark")
 }
 
 btnLight.addEventListener("click", changeBackground2)
