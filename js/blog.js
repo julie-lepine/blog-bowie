@@ -49,6 +49,7 @@ const chap2 = document.getElementById('chap2')
 const chap3 = document.getElementById('chap3')
 const chap4 = document.getElementById('chap4')
 const chap5 = document.getElementById('chap5')
+const drop = document.getElementById('myDropdown')
 
 // DARK THEME
 function changeBackground() {
@@ -60,6 +61,7 @@ function changeBackground() {
     chap3.classList.add("dark4")
     chap4.classList.add("dark4")
     chap5.classList.add("dark4")
+    drop.classList.add("dark3")
 }
 
 btnDark.addEventListener("click", changeBackground)
@@ -74,6 +76,7 @@ function changeBackground2() {
     chap3.classList.remove("dark4")
     chap4.classList.remove("dark4")
     chap5.classList.remove("dark4")
+    drop.classList.remove("dark3")
 }
 
 btnLight.addEventListener("click", changeBackground2)

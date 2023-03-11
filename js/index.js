@@ -60,6 +60,7 @@ const cardBod = document.getElementById('indexCard')
 const cardBod2 = document.getElementById('indexCard2')
 const title = document.getElementById('asideTitle')
 const title2 = document.getElementById('asideTitle2')
+const drop = document.getElementById('myDropdown')
 
 // DARK THEME
 function changeBackground(color) {
@@ -69,6 +70,7 @@ function changeBackground(color) {
     cardBod2.classList.add("dark1")
     title.classList.add("dark2")
     title2.classList.add("dark1")
+    drop.classList.add("dark3")
 }
 
 btnDark.addEventListener("click", changeBackground)
@@ -81,6 +83,7 @@ function changeBackground2(color) {
     cardBod2.classList.remove("dark1")
     title.classList.remove("dark2")
     title2.classList.remove("dark1")
+    drop.classList.remove("dark3")
 }
 
 btnLight.addEventListener("click", changeBackground2)
