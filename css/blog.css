@@ -9,7 +9,7 @@ main article .borderz {
     text-align: justify;
 }
 
-h2.text-end::before {
+h2.text-end:before {
     content: "\2192";
 }
 
@@ -24,6 +24,18 @@ h2.text-end::before {
         display: none;
     }
 }
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
+}
+
 
 @media screen and (max-width: 425px) {
     footer div {

@@ -16,20 +16,15 @@
   <meta type="description" content="Bienvenue, chers humains, dans ce modeste blog personnel.">
 </head>
 
-<!-- TO DO
-  revoir les 2 cases de textes
-  vidéo très (trop ?) lourde une fois publié. le site met trois plombes à charger et ça annule les animations au scroll. Mettre une photo ou rendre la vidéo moins lourde
--->
-
 <body>
   <header id="start">
     <div class="dropdown">
       <div class="d-flex justify-content-between">
         <img src="./img/menu-2-svgrepo-com.svg" onclick="myFunction()" class="dropbtn" alt="dropdown-menu">
         <div class="d-flex justify-content-evenly align-items-center lightbulbsDiv">
-          <img class="lightbulbs navItems" id="lightOn" src="./img/idea-off.png" alt="turn-off-dark-mode">
-          <div class="lightbulbsSeparator navItems"></div>
-          <img class="lightbulbs navItems" id="lightOff" src="./img/idea.png" alt="turn-on-dark-mode">
+          <img class="lightbulbs" id="lightOn" src="./img/idea-off.png" alt="turn-off-dark-mode">
+          <div class="lightbulbsSeparator"></div>
+          <img class="lightbulbs" id="lightOff" src="./img/idea.png" alt="turn-on-dark-mode">
         </div>
       </div>
       <div id="myDropdown" class="dropdown-content">
@@ -88,7 +83,7 @@
           <img src="./img/portfolio.png" alt="portfolio-icon" class="portfolioImg" width="100" height="100">
         </a>
       </div>
-      <div class="content reveal text-center">
+      <div class="content reveal text-center" id="content4">
         <h3 id="asideTitle2" class="mb-4 mt-2">et un montage de fan de moi car je suis bg quand même</h3>
         <video id="asideVideo" src="./img/IMG_5428.mp4" controls alt="bowie-'s-fan-video"></video>
       </div>
@@ -100,14 +95,13 @@
     <div class="copyright">
       <p class="text-dark m-0">By <a href="https://www.linkedin.com/in/julie-lepine/" target="_blank"
           class="text-decoration-none text-black">July</a> <img src="./img/flower.png" height="18" alt="flower">,
-        2022.</p>
+        2023.</p>
     </div>
     <div>
       <a href="#start"><img src="./img/up.png" alt="up" class="up" /></a>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./script.js"></script>
   <script src="./js/index.js"></script>
 
 </body>

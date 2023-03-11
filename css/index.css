@@ -6,7 +6,7 @@
 }
 
 .img-fluid:hover {
-    animation: rotation 1s infinite linear;
+    animation: rotation 4s infinite linear;
 }
 
 @keyframes rotation {
