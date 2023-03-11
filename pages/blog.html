@@ -16,213 +16,222 @@
   <meta type="description" content="Bienvenue, chers humains, dans ce modeste blog personnel.">
 </head>
 
+<!--
+  fixer la couleur des bordures en js (pk ça ne fonctionne pas ?)
+  pk le header change pas de couleur en theme dark alors que ça fonctionne sur celui de l'index
+  animation subtiles
+-->
+
 <body>
   <header id="start">
     <div class="dropdown">
-      <div class="ww">
+      <div class="d-flex justify-content-between">
         <img src="../img/menu-2-svgrepo-com.svg" onclick="myFunction()" class="dropbtn" alt="dropdown-menu">
+        <div class="d-flex justify-content-evenly align-items-center lightbulbsDiv">
+          <img class="lightbulbs navItems" id="lightOn" src="../img/idea-off.png" alt="turn-off-dark-mode">
+          <div class="lightbulbsSeparator navItems"></div>
+          <img class="lightbulbs navItems" id="lightOff" src="../img/idea.png" alt="turn-on-dark-mode">
+        </div>
       </div>
       <div id="myDropdown" class="dropdown-content">
-        <a href="../index.html">accueil</a>
-        <span class="d-flex justify-content-evenly">
-          <img class="lightbulbs lightOn"src="../img/idea.png" alt="turn-on-dark-mode">
-          <div class="lightbulbsSeparator"></div>
-          <img class="lightbulbs lightOff"src="../img/idea-off.png" alt="turn-off-dark-mode">
-        </span>
+        <a href="../index.html" class="navItems">accueil</a>
       </div>
     </div>
-      <div class="w-100 d-flex justify-content-end">
-        <div class="ms-3 pe-3"><a href="#chap1" class="nav-link link-secondary"><i
-              class="bi bi-bookmark-heart-fill"></i> Le sapin de Noël</a></div>
-        <div class="pe-3"><a href="#chap2" class="nav-link link-secondary"><i
-              class="bi bi-bookmark-heart-fill"></i> J'ai faim</a></div>
-        <div class="pe-3"><a href="#chap3" class="nav-link link-secondary"><i
-              class="bi bi-bookmark-heart-fill"></i> Mes potes de dehors</a></div>
-        <div class="pe-3"><a href="#chap4" class="nav-link link-secondary"><i
-              class="bi bi-bookmark-heart-fill"></i> La maîtresse</a></div>
-        <div class="pe-3"><a href="#chap5" class="nav-link link-secondary"><i
-              class="bi bi-bookmark-heart-fill"></i> Le sommeil</a></div>
-      </div>
   </header>
 
-  <main class="container-fluid mt-3">
-    <article class="m-auto row">
-      <section class="borderz p-3 mb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto" id="chap1">
-        <h2 class="text-end p-3">Chapitre 1 - Le sapin de Noël</h2>
-        <span class="d-flex justify-content-evenly align-items-center">
-          <div class="text-center mb-3">
-            <img class="me-3 ms-3 rounded" src="../img/IMG_0978.bmp" alt="bowienoel" width="300" />
-          </div>
-          <div class="ms-3 me-3">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-              praesentium voluptas ipsum fugit aperiam, nisi incidunt
-              voluptatibus in minus mollitia veniam, culpa repellat
-              cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Alias molestiae
-              reiciendis sapiente delectus placeat ut, minima quae
-              reprehenderit vitae non velit laudantium, libero adipisci aut
-              beatae ex repellat illo praesentium. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Numquam iure perferendis
-              iusto magnam sit cum voluptatibus, natus consequuntur beatae
-              dolorum iste maxime asperiores perspiciatis enim! Expedita
-              quod quae facere cupiditate. Maiores incidunt quaerat delectus
-              non repudiandae hic ex illum tempore nobis at amet itaque,
-              minus, a, molestiae placeat dolor tenetur minima dolores illo
-              quia laudantium! Id tempore ad quibusdam architecto. Accusamus
-              nam dolorem beatae animi illo voluptate modi itaque,
-              consectetur facilis numquam ut illum, aperiam cum, at eaque
-              nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
-              quod et molestiae.
-            </p>
-          </div>
-        </span>
-      </section>
-      <section class="borderz p-3 mb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto" id="chap2">
-        <h2 class="text-end p-3">Chapitre 2 - J'ai faim</h2>
-        <span class="d-flex justify-content-evenly align-items-center">
-          <div class="text-center mb-3">
-            <img class="me-3 ms-3 rounded" src="../img/IMG_0217.jpg" alt="feedingBowie" width="300" />
-          </div>
-          <div class="ms-3 me-3">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-              praesentium voluptas ipsum fugit aperiam, nisi incidunt
-              voluptatibus in minus mollitia veniam, culpa repellat
-              cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Alias molestiae
-              reiciendis sapiente delectus placeat ut, minima quae
-              reprehenderit vitae non velit laudantium, libero adipisci aut
-              beatae ex repellat illo praesentium. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Numquam iure perferendis
-              iusto magnam sit cum voluptatibus, natus consequuntur beatae
-              dolorum iste maxime asperiores perspiciatis enim! Expedita
-              quod quae facere cupiditate. Maiores incidunt quaerat delectus
-              non repudiandae hic ex illum tempore nobis at amet itaque,
-              minus, a, molestiae placeat dolor tenetur minima dolores illo
-              quia laudantium! Id tempore ad quibusdam architecto. Accusamus
-              nam dolorem beatae animi illo voluptate modi itaque,
-              consectetur facilis numquam ut illum, aperiam cum, at eaque
-              nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
-              quod et molestiae.
-            </p>
-          </div>
-        </span>
-      </section>
-      <section class="borderz p-3 mt-3 mb-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto" id="chap3">
-        <h2 class="text-end p-3">Chapitre 3 - Mes potes de dehors</h2>
-        <span class="d-flex justify-content-evenly align-items-center">
-          <div class="text-center mb-3">
-            <img class="me-3 ms-3 rounded" src="../img/IMG_0242.jpg" alt="bowieoutside" width="300" />
-          </div>
-          <div class="ms-3 me-3">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-              praesentium voluptas ipsum fugit aperiam, nisi incidunt
-              voluptatibus in minus mollitia veniam, culpa repellat
-              cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Alias molestiae
-              reiciendis sapiente delectus placeat ut, minima quae
-              reprehenderit vitae non velit laudantium, libero adipisci aut
-              beatae ex repellat illo praesentium. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Numquam iure perferendis
-              iusto magnam sit cum voluptatibus, natus consequuntur beatae
-              dolorum iste maxime asperiores perspiciatis enim! Expedita
-              quod quae facere cupiditate. Maiores incidunt quaerat delectus
-              non repudiandae hic ex illum tempore nobis at amet itaque,
-              minus, a, molestiae placeat dolor tenetur minima dolores illo
-              quia laudantium! Id tempore ad quibusdam architecto. Accusamus
-              nam dolorem beatae animi illo voluptate modi itaque,
-              consectetur facilis numquam ut illum, aperiam cum, at eaque
-              nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
-              quod et molestiae.
-            </p>
-          </div>
-        </span>
-      </section>
-      <section class="borderz p-3 mb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto" id="chap4">
-        <h2 class="text-end p-3">Chapitre 4 - La maîtresse</h2>
-        <span class="d-flex justify-content-evenly align-items-center">
-          <div class="text-center mb-3">
-            <img class="me-3 ms-3 rounded" src="../img/DB3F7567-AA0F-4740-ACF0-63BF22C48A82.jpg" alt="maitresse"
-              width="300" />
-          </div>
-          <div class="ms-3 me-3">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-              praesentium voluptas ipsum fugit aperiam, nisi incidunt
-              voluptatibus in minus mollitia veniam, culpa repellat
-              cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Alias molestiae
-              reiciendis sapiente delectus placeat ut, minima quae
-              reprehenderit vitae non velit laudantium, libero adipisci aut
-              beatae ex repellat illo praesentium. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Numquam iure perferendis
-              iusto magnam sit cum voluptatibus, natus consequuntur beatae
-              dolorum iste maxime asperiores perspiciatis enim! Expedita
-              quod quae facere cupiditate. Maiores incidunt quaerat delectus
-              non repudiandae hic ex illum tempore nobis at amet itaque,
-              minus, a, molestiae placeat dolor tenetur minima dolores illo
-              quia laudantium! Id tempore ad quibusdam architecto. Accusamus
-              nam dolorem beatae animi illo voluptate modi itaque,
-              consectetur facilis numquam ut illum, aperiam cum, at eaque
-              nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
-              quod et molestiae.
-            </p>
-          </div>
-        </span>
-      </section>
-      <section class="borderz p-3 mb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto" id="chap5">
-        <h2 class="text-end p-3">Chapitre 5 - Le sommeil</h2>
-        <span class="d-flex justify-content-evenly align-items-center">
-          <div class="text-center mb-3">
-            <img class="me-3 ms-3 rounded" src="../img/IMG_2179.bmp" alt="sleeep" width="300" />
-          </div>
-          <div class="ms-3 me-3">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-              praesentium voluptas ipsum fugit aperiam, nisi incidunt
-              voluptatibus in minus mollitia veniam, culpa repellat
-              cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Alias molestiae
-              reiciendis sapiente delectus placeat ut, minima quae
-              reprehenderit vitae non velit laudantium, libero adipisci aut
-              beatae ex repellat illo praesentium. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Numquam iure perferendis
-              iusto magnam sit cum voluptatibus, natus consequuntur beatae
-              dolorum iste maxime asperiores perspiciatis enim! Expedita
-              quod quae facere cupiditate. Maiores incidunt quaerat delectus
-              non repudiandae hic ex illum tempore nobis at amet itaque,
-              minus, a, molestiae placeat dolor tenetur minima dolores illo
-              quia laudantium! Id tempore ad quibusdam architecto. Accusamus
-              nam dolorem beatae animi illo voluptate modi itaque,
-              consectetur facilis numquam ut illum, aperiam cum, at eaque
-              nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
-              quod et molestiae.
-            </p>
-          </div>
-        </span>
-      </section>
-    </article>
-  </main>
+  <div class="dropdown2">
+    <div class="d-flex justify-content-between">
+      <p onclick="myFunction2()" class="dropbtn2">Liste des articles</p>
+    </div>
+    <div id="myDropdown2" class="dropdown-content2">
+      <a href="#chap1"><i class="bi bi-bookmark-heart-fill"></i> Le sapin de Noël</a>
+      <a href="#chap2"><i class="bi bi-bookmark-heart-fill"></i> J'ai faim</a>
+      <a href="#chap3"><i class="bi bi-bookmark-heart-fill"></i> Mes potes de dehors</a>
+      <a href="#chap4"><i class="bi bi-bookmark-heart-fill"></i> La maîtresse</a>
+      <a href="#chap5"><i class="bi bi-bookmark-heart-fill"></i> Le sommeil</a>
+    </div>
+  </div>
 
-  <footer class="footer bg-warning text-light footer-expand-lg p-2 d-flex justify-content-center mt-3">
-    <div class="d-flex justify-content-around align-items-center w-75">
-      <div class="copyright">
-        <p class="text-dark m-0">By <a href="https://www.linkedin.com/in/julie-lepine/" target="_blank"
-            class="text-decoration-none text-black">July</a> <img src="../img/flower.png" height="18" alt="flower">,
-          2022.</p>
+    <main class="container-fluid pt-3 pb-5">
+      <article class="m-auto row">
+        <section class="borderz p-3 mb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto"
+          id="chap1">
+          <h2 class="text-end p-3">Chapitre 1 - Le sapin de Noël</h2>
+          <span class="d-flex justify-content-evenly align-items-center">
+            <div class="text-center mb-3">
+              <img class="me-3 ms-3 rounded" src="../img/IMG_0978.bmp" alt="bowienoel" width="300" />
+            </div>
+            <div class="ms-3 me-3">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                praesentium voluptas ipsum fugit aperiam, nisi incidunt
+                voluptatibus in minus mollitia veniam, culpa repellat
+                cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Alias molestiae
+                reiciendis sapiente delectus placeat ut, minima quae
+                reprehenderit vitae non velit laudantium, libero adipisci aut
+                beatae ex repellat illo praesentium. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Numquam iure perferendis
+                iusto magnam sit cum voluptatibus, natus consequuntur beatae
+                dolorum iste maxime asperiores perspiciatis enim! Expedita
+                quod quae facere cupiditate. Maiores incidunt quaerat delectus
+                non repudiandae hic ex illum tempore nobis at amet itaque,
+                minus, a, molestiae placeat dolor tenetur minima dolores illo
+                quia laudantium! Id tempore ad quibusdam architecto. Accusamus
+                nam dolorem beatae animi illo voluptate modi itaque,
+                consectetur facilis numquam ut illum, aperiam cum, at eaque
+                nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
+                quod et molestiae.
+              </p>
+            </div>
+          </span>
+        </section>
+        <section class="borderz p-3 mb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto"
+          id="chap2">
+          <h2 class="text-end p-3">Chapitre 2 - J'ai faim</h2>
+          <span class="d-flex justify-content-evenly align-items-center">
+            <div class="text-center mb-3">
+              <img class="me-3 ms-3 rounded" src="../img/IMG_0217.jpg" alt="feedingBowie" width="300" />
+            </div>
+            <div class="ms-3 me-3">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                praesentium voluptas ipsum fugit aperiam, nisi incidunt
+                voluptatibus in minus mollitia veniam, culpa repellat
+                cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Alias molestiae
+                reiciendis sapiente delectus placeat ut, minima quae
+                reprehenderit vitae non velit laudantium, libero adipisci aut
+                beatae ex repellat illo praesentium. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Numquam iure perferendis
+                iusto magnam sit cum voluptatibus, natus consequuntur beatae
+                dolorum iste maxime asperiores perspiciatis enim! Expedita
+                quod quae facere cupiditate. Maiores incidunt quaerat delectus
+                non repudiandae hic ex illum tempore nobis at amet itaque,
+                minus, a, molestiae placeat dolor tenetur minima dolores illo
+                quia laudantium! Id tempore ad quibusdam architecto. Accusamus
+                nam dolorem beatae animi illo voluptate modi itaque,
+                consectetur facilis numquam ut illum, aperiam cum, at eaque
+                nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
+                quod et molestiae.
+              </p>
+            </div>
+          </span>
+        </section>
+        <section class="borderz p-3 mt-3 mb-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto"
+          id="chap3">
+          <h2 class="text-end p-3">Chapitre 3 - Mes potes de dehors</h2>
+          <span class="d-flex justify-content-evenly align-items-center">
+            <div class="text-center mb-3">
+              <img class="me-3 ms-3 rounded" src="../img/IMG_0242.jpg" alt="bowieoutside" width="300" />
+            </div>
+            <div class="ms-3 me-3">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                praesentium voluptas ipsum fugit aperiam, nisi incidunt
+                voluptatibus in minus mollitia veniam, culpa repellat
+                cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Alias molestiae
+                reiciendis sapiente delectus placeat ut, minima quae
+                reprehenderit vitae non velit laudantium, libero adipisci aut
+                beatae ex repellat illo praesentium. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Numquam iure perferendis
+                iusto magnam sit cum voluptatibus, natus consequuntur beatae
+                dolorum iste maxime asperiores perspiciatis enim! Expedita
+                quod quae facere cupiditate. Maiores incidunt quaerat delectus
+                non repudiandae hic ex illum tempore nobis at amet itaque,
+                minus, a, molestiae placeat dolor tenetur minima dolores illo
+                quia laudantium! Id tempore ad quibusdam architecto. Accusamus
+                nam dolorem beatae animi illo voluptate modi itaque,
+                consectetur facilis numquam ut illum, aperiam cum, at eaque
+                nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
+                quod et molestiae.
+              </p>
+            </div>
+          </span>
+        </section>
+        <section class="borderz p-3 mb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto"
+          id="chap4">
+          <h2 class="text-end p-3">Chapitre 4 - La maîtresse</h2>
+          <span class="d-flex justify-content-evenly align-items-center">
+            <div class="text-center mb-3">
+              <img class="me-3 ms-3 rounded" src="../img/DB3F7567-AA0F-4740-ACF0-63BF22C48A82.jpg" alt="maitresse"
+                width="300" />
+            </div>
+            <div class="ms-3 me-3">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                praesentium voluptas ipsum fugit aperiam, nisi incidunt
+                voluptatibus in minus mollitia veniam, culpa repellat
+                cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Alias molestiae
+                reiciendis sapiente delectus placeat ut, minima quae
+                reprehenderit vitae non velit laudantium, libero adipisci aut
+                beatae ex repellat illo praesentium. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Numquam iure perferendis
+                iusto magnam sit cum voluptatibus, natus consequuntur beatae
+                dolorum iste maxime asperiores perspiciatis enim! Expedita
+                quod quae facere cupiditate. Maiores incidunt quaerat delectus
+                non repudiandae hic ex illum tempore nobis at amet itaque,
+                minus, a, molestiae placeat dolor tenetur minima dolores illo
+                quia laudantium! Id tempore ad quibusdam architecto. Accusamus
+                nam dolorem beatae animi illo voluptate modi itaque,
+                consectetur facilis numquam ut illum, aperiam cum, at eaque
+                nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
+                quod et molestiae.
+              </p>
+            </div>
+          </span>
+        </section>
+        <section class="borderz p-3 pb-3 mt-3 m-auto col-xxl-7 col-xl-8 col-lg-10 col-md-11 col-sm-10 mr-auto"
+          id="chap5">
+          <h2 class="text-end p-3">Chapitre 5 - Le sommeil</h2>
+          <span class="d-flex justify-content-evenly align-items-center">
+            <div class="text-center mb-3">
+              <img class="me-3 ms-3 rounded" src="../img/IMG_2179.bmp" alt="sleeep" width="300" />
+            </div>
+            <div class="ms-3 me-3">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                praesentium voluptas ipsum fugit aperiam, nisi incidunt
+                voluptatibus in minus mollitia veniam, culpa repellat
+                cupiditate nemo. Natus odio omnis dolorum modi? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Alias molestiae
+                reiciendis sapiente delectus placeat ut, minima quae
+                reprehenderit vitae non velit laudantium, libero adipisci aut
+                beatae ex repellat illo praesentium. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Numquam iure perferendis
+                iusto magnam sit cum voluptatibus, natus consequuntur beatae
+                dolorum iste maxime asperiores perspiciatis enim! Expedita
+                quod quae facere cupiditate. Maiores incidunt quaerat delectus
+                non repudiandae hic ex illum tempore nobis at amet itaque,
+                minus, a, molestiae placeat dolor tenetur minima dolores illo
+                quia laudantium! Id tempore ad quibusdam architecto. Accusamus
+                nam dolorem beatae animi illo voluptate modi itaque,
+                consectetur facilis numquam ut illum, aperiam cum, at eaque
+                nobis ducimus vero dolores quia! Itaque in veritatis quibusdam
+                quod et molestiae.
+              </p>
+            </div>
+          </span>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer bg-warning text-light footer-expand-lg p-2 d-flex justify-content-center">
+      <div class="d-flex justify-content-around align-items-center w-75">
+        <div class="copyright">
+          <p class="text-dark m-0">By <a href="https://www.linkedin.com/in/julie-lepine/" target="_blank"
+              class="text-decoration-none text-black">July</a> <img src="../img/flower.png" height="18" alt="flower">,
+            2022.</p>
+        </div>
       </div>
       <div>
-        <a href="contact.html" class="text-decoration-none link-dark">Contacts</a></li>
+        <a href="#start"><img src="../img/up.png" alt="up" class="up" /></a>
       </div>
-    </div>
-    <div>
-      <a href="#start"><img src="../img/up.png" alt="up" class="up" /></a>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../script.js"></script>
-  </body>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
 
 </html>

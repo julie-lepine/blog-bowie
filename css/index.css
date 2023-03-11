@@ -21,7 +21,11 @@
 .card-body  {
     margin: 5svh;
     padding: 2svh;
-    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
 }
 
 .card-body:last-child {
@@ -58,6 +62,7 @@ aside {
     width: 30%;
     margin: 10svh 5svh 5svh 0;
     gap: 10px;
+    padding: 1svh;
 }
 
 .content {
@@ -65,7 +70,7 @@ aside {
     background: url(../img/asides-bg.avif);
     background-position: center;
     background-size: cover;
-    border: 1px dotted;
+    border: 1px solid;
     padding: 2svh;
 }
 
@@ -75,7 +80,7 @@ aside {
 
 aside h3 {
     background-color: rgba(255, 255, 255, 0.9);
-    padding : 1svh;
+    padding : 2svh;
     font-size: 1.5em;
 }
 

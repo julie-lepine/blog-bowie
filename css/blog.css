@@ -1,21 +1,8 @@
-/* HEADER */
-.navbarhidden {
-    background-color: rgba(207, 204, 204, 0.253);
-}
-
-.navbarhidden u li:before {
-    content: "/";
-}
-
-.navbar-nav {
-    display: flex;
-}
-
 /* CORPS */
 /* ARTICLES */
 main article .borderz {
     margin-top: 5%;
-    border: 2px dotted black;
+    border: 2px dotted rgb(0, 0, 0);
 }
 
 .text-justify {

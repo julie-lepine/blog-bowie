@@ -17,10 +17,8 @@
 </head>
 
 <!-- TO DO
-- DESIGN GENERAL : AJOUTER DES ANIMATIONS SUBTILES POUR TRAIN
-- POURQUOI PAS UN THEME SOMBRE POUR S'ENTRAINER
-(mais alors, comment faire pour que le choix n'ait pas a être refait à chaque page ? mmmh)
-- blog : ajouter article dans une liste, come une nav bar finalement
+  revoir les 2 cases de textes
+  vidéo très (trop ?) lourde une fois publié. le site met trois plombes à charger et ça annule les animations au scroll. Mettre une photo ou rendre la vidéo moins lourde
 -->
 
 <body>
@@ -47,26 +45,19 @@
     </div>
     <div class="mainContent">
       <div class="articleContainer">
-        <div class="card-body reveal">
-          <h2 class="reveal">Qui suis-je ?</h2>
+        <div class="card-body reveal" id="indexCard">
+          <h2 class="reveal mb-5">Qui suis-je ?</h2>
           <p class="reveal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem voluptatibus porro similique asperiores nam amet et unde, labore temporibus consequuntur minima minus quidem, ullam ab non! Voluptatum, eos facere.
-            Facilis rerum dolor, veniam et ducimus numquam libero vitae itaque? Doloribus odit sed aperiam deleniti assumenda aut ut aliquid quaerat maxime animi, repellendus magnam quod, velit molestiae voluptatem unde? Sed.
-            Suscipit, distinctio alias a voluptatibus iste expedita odio tempore sapiente esse laborum eligendi ex doloremque dolor incidunt labore enim saepe nobis corrupti reiciendis quaerat, quis nemo! Repellat fuga blanditiis assumenda.
-            Dicta illo nemo eligendi corrupti! Quasi dicta laudantium minima, ipsa voluptatem quaerat dignissimos natus alias, eius nisi repellendus molestiae atque. Ab id doloribus tenetur sequi veniam dolorum iste rem eaque.
-            Amet enim, quos repellendus minima culpa cum tempore, molestias placeat qui deserunt doloremque saepe vel iusto, iste eius repellat cumque animi voluptatum sapiente vero magnam quasi exercitationem quibusdam? Et, quia!
+            Je m'appelle Bowie, je suis un superbe chat noir avec des petits tâches blanches. J'ai été appelé comme ça par l'humaine de service par rapport à un brailleur humain apparemment stylé. <br> Je vis avec mon humaine de service dans un misérable appartement de ville. Heureusement que Tartine vient me dire bonjour de temps en temps. Tartine ? La voisine bien sur (et elle, elle a de la chance, elle a deux humains de service purée). <br> Dans la vie j'aime dormir et les souris en tissus. J'aime manger aussi. Oh la la que j'aime manger. Mon humaine a ramené un robot domestique qui me sert ma nourriture. Dommage, j'essaie d'harceler ce truc mais, contrairement à l'humaine, il ne répond pas à mes demandes de nourriture. <br> Sombre histoire de régime. Va comprendre. <br> Bah voilà, balade-toi dans ces quelques pages, humain. Tu as la chance d'apprendre à me connaître, profites-en, tout le monde n'a pas cette opportunité. 
           </p>
         </div>
-        <div class="card-body text-center reveal">
+        <div class="text-center reveal">
           <img class="rounded mb-3" id="bowiedodo" src="./img/IMG_2179.bmp" width="400" alt="photo-bowie"/>
         </div>
-        <div class="card-body reveal">
-          <h2 class="reveal">Une courte biographie</h2>
+        <div class="card-body reveal" id="indexCard2">
+          <h2 class="reveal mb-5">Une courte biographie</h2>
           <p class="reveal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores possimus veniam, maxime doloremque, facilis autem similique, illo rerum animi quas voluptates in nostrum ducimus libero ratione sequi voluptatum unde.
-            Sunt, fugit tempore architecto cupiditate illum tenetur sint eum quia veritatis est distinctio commodi vero aperiam incidunt. Ut eius culpa sapiente quasi veritatis ea labore fugit et provident, quaerat aliquid?
-            Sit distinctio mollitia accusantium corporis minus ipsum vitae incidunt quae ratione magnam pariatur itaque eos, dicta nostrum culpa ab necessitatibus, laboriosam quod. Iste eligendi, dignissimos nesciunt minima at amet magni!
-            Mollitia, laboriosam minus? Sunt quo magnam velit doloribus libero. Rerum nihil hic ad, ducimus sapiente similique non maxime, at optio, reiciendis assumenda dignissimos vel aliquid asperiores dolore? Nemo, enim similique.
+            Je suis le dernier-né d'une litière de cinq chatons (cinq ? J'en sais rien j'avoue, j'invente pour le storytelling mais on doit pas être très loin du vrai chiffre). A l'origine je n'étais même pas celui choisi par l'humaine mais il restait que moi donc elle m'a pris. Super ? Pas sûr. <br> Après elle était persuadée que j'étais une nana, super, encore un bon point pour l'humaine. La folle en blouse blanche lui a même demandé si ça la dérangeait que j'étais finalement un mâle. Nan mais c'est quoi cette question sérieux ! <br> Donc du coup j'ai été ramené par cette humaine un peu cool qui m'utilise pour créer des sites internet inutiles mais qui, je la cite, "la font s'entraîner". Bon. Pas sûr d'avoir donné mon accord pour qu'elle utilise mon image mais qu'est-ce que je peux en dire hein ? Miaou ? <br> Et sinon j'ai bientôt 8 ans, et oui je ne les fait pas, je sais. Je reste intimement persuadé d'être le chat préféré de tous ses amis humains mais ils ne l'avoueront jamais. <br> J'adore jouer au chat avec mon humaine de compagnie aussi, ironique me direz-vous. 
           </p>
         </div>
       </div>
@@ -92,13 +83,13 @@
         </a>
       </div>
       <div class="content reveal text-center">
-        <h3>son portoflio, un truc comme ça</h3>
+        <h3 id="asideTitle">son portoflio, un truc comme ça</h3>
         <a href="https://julie-lepine.github.io/portfolio/index.html" target="_blank">
           <img src="./img/portfolio.png" alt="portfolio-icon" class="portfolioImg" width="100" height="100">
         </a>
       </div>
       <div class="content reveal text-center">
-        <h3 class="mb-4 mt-2">et un montage de fan de moi car je suis bg quand même</h3>
+        <h3 id="asideTitle2" class="mb-4 mt-2">et un montage de fan de moi car je suis bg quand même</h3>
         <video id="asideVideo" src="./img/IMG_5428.mp4" controls alt="bowie-'s-fan-video"></video>
       </div>
     </aside>
@@ -110,6 +101,9 @@
       <p class="text-dark m-0">By <a href="https://www.linkedin.com/in/julie-lepine/" target="_blank"
           class="text-decoration-none text-black">July</a> <img src="./img/flower.png" height="18" alt="flower">,
         2022.</p>
+    </div>
+    <div>
+      <a href="#start"><img src="../img/up.png" alt="up" class="up" /></a>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
